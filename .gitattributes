@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('C://TD/test.csv')
 
-x = df.drop(['FailureAfterMounth', 'serial_number', 'model'], axis=1)
+x = df.drop(['data', 'FailureAfterMounth', 'serial_number', 'model'], axis=1)
 
 y = df['FailureAfterMounth']
 
